@@ -1,6 +1,7 @@
 document.querySelectorAll(".book").forEach(book=>book.addEventListener("click",()=>{
-  document.querySelectorAll(".book").forEach(b=>b.classList.remove("selected"));
+  document.querySelectorAll(".book").forEach(b=>{b.classList.remove("selected");b.setAttribute("aria-pressed","false");});
   book.classList.add("selected");
+  book.setAttribute("aria-pressed","true");
   const panel=document.querySelector(".book-detail");
   panel.innerHTML=`<span class="detail-label">FROM THE SHELF</span><h3>${book.dataset.title}</h3><p>${book.dataset.copy}</p>`;
 }));
