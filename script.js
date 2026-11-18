@@ -50,3 +50,23 @@ document.querySelectorAll('a[href^="#"]').forEach(link=>link.addEventListener("c
   const target=document.querySelector(link.getAttribute("href"));
   if(target) target.setAttribute("tabindex","-1");
 }));
+
+/* Accessible compact navigation on small screens. */
+const menuToggle=document.querySelector(".menu-toggle");
+const siteMenu=document.querySelector("#site-menu");
+menuToggle?.addEventListener("click",()=>{
+ const open=menuToggle.getAttribute("aria-expanded")!=="true";
+ menuToggle.setAttribute("aria-expanded",String(open));
+ document.querySelector(".nav")?.classList.toggle("menu-open",open);
+});
+siteMenu?.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{
+ menuToggle?.setAttribute("aria-expanded","false");
+ document.querySelector(".nav")?.classList.remove("menu-open");
+}));
+document.addEventListener("keydown",event=>{
+ if(event.key==="Escape"){
+  menuToggle?.setAttribute("aria-expanded","false");
+  document.querySelector(".nav")?.classList.remove("menu-open");
+  menuToggle?.focus();
+ }
+});
