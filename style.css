@@ -4,3 +4,44 @@
 
 .design-lab{padding:95px 9vw;background:#f8f4ec}.lab-intro{display:flex;align-items:center;gap:30px;max-width:900px;margin:0 0 35px}.lab-stamp{flex:0 0 92px;height:92px;border-radius:50%;display:grid;place-content:center;text-align:center;background:#d87559;color:#fff8eb;font:10px/1.5 "DM Mono";transform:rotate(-9deg);box-shadow:4px 5px 0 #b55f49}.lab-intro p{font:17px/1.7 Fraunces;color:#5f5a50;max-width:690px}.study-list{display:grid;gap:18px}.study-card{background:#fffaf1;border:1px solid #e1d8c9;border-radius:9px;padding:25px 28px;box-shadow:0 6px 20px #66553a08}.study-top{display:flex;justify-content:space-between;gap:15px;font:9px "DM Mono";letter-spacing:1px;color:#a45c49;padding-bottom:17px;border-bottom:1px solid #e8e0d4}.study-status{color:#687c68}.study-main{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:25px 0;align-items:center}.study-main h3{font:500 32px/1.12 Fraunces;letter-spacing:-.7px;margin:0 0 12px;max-width:440px}.study-lede{font:14px/1.65 "DM Sans";color:#716b60;max-width:440px}.study-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}.study-tags span{border-radius:20px;background:#f0e8dc;padding:6px 10px;font:9px "DM Mono";color:#726b5f}.mini-architecture{background:#f1e5d9;border-radius:8px;padding:17px;display:flex;flex-direction:column;align-items:center;gap:7px;min-height:260px;justify-content:center}.mini-architecture.knowledge{background:#e8e1eb}.mini-architecture.gateway{background:#e4eadf}.mini-architecture.ops{background:#e5e9ed}.arch-node{width:78%;background:#fffaf2;border:1px solid #cbb9a8;border-radius:5px;padding:9px;text-align:center;font:10px "DM Mono";color:#4c4a40}.arch-node small{font:9px "DM Sans";color:#8a8073}.arch-node.accent-node{background:#d77d61;color:white;border-color:#c66e54}.arch-node.accent-node small{color:#fff1e7}.arch-node.dark-node{background:#40574b;color:#fff8eb;border-color:#40574b}.mini-architecture>i{font-style:normal;color:#a46b56;font-size:14px;line-height:1}.arch-split{display:flex;gap:8px;width:78%;justify-content:center}.arch-split .arch-node{width:50%;font-size:9px}.study-detail{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;border-top:1px solid #e8e0d4;padding-top:18px}.study-detail b{font:10px "DM Mono";letter-spacing:.6px;color:#a45c49}.study-detail p{font:12px/1.7 "DM Sans";color:#716b60;margin:8px 0 0}.lab-footnote{font:11px/1.7 "DM Sans";color:#827b6e;margin:22px 2px 0;max-width:900px}
 @media(max-width:700px){.design-lab{padding:65px 7vw}.lab-intro{align-items:flex-start;gap:18px}.lab-stamp{flex-basis:70px;height:70px;font-size:8px}.lab-intro p{font-size:14px}.study-card{padding:20px 17px}.study-top{font-size:8px}.study-main{grid-template-columns:1fr;gap:15px;padding:20px 0}.study-main h3{font-size:27px}.mini-architecture{min-height:230px}.study-detail{grid-template-columns:1fr;gap:13px}.study-detail p{margin-top:4px}}
+/* Expanded government portfolio + SE Command Center */
+.portfolio-intro{max-width:850px;font:17px/1.8 "DM Sans";color:#625e53;margin:-12px 0 34px}
+.mission-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.mission-card{border-radius:7px;padding:26px 27px 24px;box-shadow:0 8px 24px #4a40301a;min-width:0}
+.mission-card.peach{background:#f1d9c9}.mission-card.lavender{background:#e3dced}.mission-card.mint{background:#dce8dc}.mission-card.yellow{background:#efe4bf}.mission-card.blue{background:#d9e3e8}.mission-card.lilac{background:#e9dce5}
+.mission-meta,.code-panel-head{display:flex;justify-content:space-between;gap:10px;font:9px "DM Mono";letter-spacing:1px;color:#766e60}
+.mission-card h3{font:500 27px/1.15 Fraunces;margin:19px 0 12px;letter-spacing:-.5px}
+.mission-card p{font:13px/1.75 "DM Sans";color:#514e45}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin:17px 0}
+.chips span{border:1px solid #847b6d55;border-radius:20px;padding:6px 9px;font:9px "DM Mono";color:#59564d}
+.code-sample,.code-panel pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#292e2a;color:#f4eee2;border-radius:6px;padding:16px 17px;margin:18px 0 0;font:11px/1.7 "DM Mono";overflow-x:auto}
+.code-sample i,.code-panel i{color:#e8a58d;font-style:normal}
+.inline-visual{width:100%;max-height:250px;object-fit:contain;background:#faf7f0;border-radius:5px;margin-top:12px}
+.portfolio-note{font:11px/1.7 "DM Sans";color:#777164;max-width:900px;margin:24px 0 0}
+.command-section{padding:88px 9vw;background:#e7e0d4}
+.command-hero{display:grid;grid-template-columns:1.1fr .9fr;gap:5vw;align-items:center;background:#f7f1e7;border:1px solid #d7cdbd;padding:34px 38px;border-radius:8px}
+.command-label{font:10px "DM Mono";letter-spacing:1px;color:#a45c49}
+.command-hero h3{font:500 37px/1.12 Fraunces;max-width:580px;margin:13px 0}
+.command-hero p:not(.command-label){font:14px/1.8 "DM Sans";color:#625e53;max-width:620px}
+.command-visual{height:300px;position:relative;display:grid;place-items:center}
+.command-core{width:116px;height:116px;border-radius:50%;background:#35483d;color:#fff5e8;display:grid;place-content:center;text-align:center;font:11px/1.4 "DM Mono";letter-spacing:1px;z-index:2;box-shadow:0 0 0 12px #e4e9dc,0 0 0 25px #f0dfce}
+.command-node{position:absolute;padding:10px 13px;background:#fffaf1;border:1px solid #cfc4b4;border-radius:5px;text-align:center;font:10px/1.35 "DM Mono";color:#555247;box-shadow:0 5px 12px #40352512}
+.cn1{top:8px;left:calc(50% - 45px)}.cn2{top:75px;right:0}.cn3{bottom:38px;right:10px}.cn4{bottom:5px;left:calc(50% - 42px)}.cn5{bottom:58px;left:0}.cn6{top:78px;left:0}
+.command-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:20px}
+.command-grid article{background:#f7f1e7;padding:22px 20px;border-top:3px solid #d77a5d;min-height:190px}
+.command-grid article>span{font:10px "DM Mono";color:#b16b55}
+.command-grid h3{font:500 20px/1.2 Fraunces;margin:12px 0 9px}
+.command-grid p{font:12px/1.7 "DM Sans";color:#696356}
+.code-panel{background:#292e2a;border-radius:7px;padding:20px 24px;margin-top:20px;color:#f4eee2}
+.code-panel-head{color:#e7b19b}
+.code-panel pre{padding:0;margin-top:15px}
+.gallery-section{padding:85px 9vw}
+.photo-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.photo-gallery figure{margin:0;background:#e4d9c8;padding:8px 8px 13px;transform:rotate(var(--tilt,0deg))}
+.photo-gallery figure:nth-child(2){--tilt:1.4deg}.photo-gallery figure:nth-child(3){--tilt:-1deg}.photo-gallery figure:nth-child(4){--tilt:1deg}
+.photo-gallery img{width:100%;height:230px;object-fit:cover;display:block}
+.photo-gallery figcaption{font:italic 15px Fraunces;color:#575146;padding:10px 5px 0}
+.original-assets{display:flex;align-items:center;gap:18px;margin-top:25px;color:#7b7468;font:12px "DM Mono"}
+.original-assets img{width:130px;height:85px;object-fit:contain;background:#f5f0e7;border:1px solid #ddd3c3;padding:5px}
+@media(max-width:900px){.mission-grid{grid-template-columns:1fr}.command-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.command-hero{grid-template-columns:1fr}.photo-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.command-section,.gallery-section,.work-section{padding:65px 6vw}.command-hero{padding:25px 20px}.command-hero h3{font-size:30px}.command-grid{grid-template-columns:1fr}.command-visual{height:280px}.photo-gallery img{height:180px}.mission-card{padding:22px 20px}.mission-card h3{font-size:24px}.mission-meta{font-size:8px}.original-assets{align-items:flex-start;flex-direction:column}}
