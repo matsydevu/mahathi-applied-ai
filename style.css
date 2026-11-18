@@ -145,3 +145,123 @@
  .shelf-section{padding-top:48px}
 }
 @media(min-width:601px){.menu-toggle{display:none}.mobile-contact{display:none!important}}
+
+/* Mobile art direction: make the bookshelf a tactile, swipeable reading experience */
+@media (max-width: 600px) {
+  .nav {
+    height: 64px;
+    padding: 0 max(5vw, env(safe-area-inset-left));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .signature { font-size: 25px; }
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    padding: 0 15px;
+    border: 1px solid #cfc5b5;
+    border-radius: 999px;
+    background: #fffaf1;
+    color: #35473e;
+    font: 10px "DM Mono";
+    letter-spacing: 1px;
+  }
+  .menu-toggle b { font: 19px "DM Sans"; }
+  .nav nav {
+    display: none;
+    position: absolute;
+    top: 63px;
+    left: 0;
+    right: 0;
+    padding: 10px 7vw 20px;
+    background: #f4efe5;
+    border-bottom: 1px solid #d9d0c1;
+    box-shadow: 0 16px 24px #3c35251a;
+    flex-direction: column;
+    gap: 0;
+    z-index: 15;
+  }
+  .nav.menu-open nav { display: flex; }
+  .nav nav a {
+    display: block;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5ddcf;
+    font-size: 14px;
+  }
+  .nav nav .mobile-contact { display: block; color: #a45c49; border: 0; font-weight: 600; }
+  .hello { display: none; }
+
+  .hero { padding: 38px 7vw 30px; }
+  .hero h1 { max-width: 12ch; font-size: clamp(43px, 11vw, 54px); }
+  .hero-links { display: flex; align-items: center; flex-wrap: wrap; gap: 14px 18px; }
+  .hero-links .pill-button { flex: 0 0 auto; }
+  .hero-links .quiet-link { font-size: 12px; }
+  .tiny-facts { gap: 8px 13px; line-height: 1.8; margin-top: 26px; }
+  .hero-right { margin: 18px auto 0; height: min(88vw, 360px); }
+
+  .shelf-section { padding: 58px 6vw 56px; }
+  .section-heading { margin-bottom: 26px; }
+  .section-heading h2 { font-size: clamp(39px, 10vw, 46px); }
+  .section-aside { font-size: 14px; line-height: 1.65; margin-top: 12px; }
+  .bookcase {
+    padding: 17px 14px 14px;
+    border-width: 7px;
+    border-radius: 7px;
+    box-shadow: 0 8px 0 #a97d5c, 0 16px 28px #57442a18;
+    overflow: hidden;
+  }
+  .shelf-top { padding: 0 3px 14px; font-size: 8px; letter-spacing: .8px; }
+  .books {
+    height: auto;
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    padding: 0 1px 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 1px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #a77c5d transparent;
+  }
+  .book {
+    flex: 0 0 76%;
+    width: 76%;
+    min-width: 0;
+    height: 178px !important;
+    border-radius: 5px;
+    padding: 15px 17px 14px;
+    align-items: flex-start;
+    justify-content: space-between;
+    scroll-snap-align: start;
+    text-align: left;
+    box-shadow: inset 6px 0 #ffffff20, inset -4px 0 #00000012, 0 4px 8px #5a432b18;
+  }
+  .book i { font-size: 10px; }
+  .book b { font-size: 23px; line-height: 1.05; text-align: left; letter-spacing: -.3px; }
+  .book small { font-size: 9px; line-height: 1.5; text-align: left; max-width: 18ch; }
+  .book:hover,.book:focus-visible { transform: translateY(-3px); }
+  .book.selected { outline: 2px solid #fff8e9; outline-offset: -5px; }
+  .tiny-vase { display: none; }
+  .shelf-plank { height: 10px; margin: 0 -14px; }
+  .bookcase-foot { gap: 12px; padding-top: 15px; font-size: 7px; line-height: 1.5; }
+  .bookcase-foot span:last-child { white-space: nowrap; }
+  .book-detail {
+    display: block;
+    margin-top: 19px;
+    padding: 18px 17px 20px;
+    background: #fffaf1;
+    border: 1px solid #e0d7c9;
+    border-radius: 6px;
+  }
+  .book-detail h3 { margin: 8px 0; font-size: 25px; }
+  .book-detail p { font-size: 13px; line-height: 1.7; }
+}
+@media (min-width: 601px) {
+  .menu-toggle, .mobile-contact { display: none !important; }
+}
