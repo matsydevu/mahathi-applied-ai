@@ -83,3 +83,29 @@
 .story-architecture aside b{font:500 18px Fraunces;color:#35473e}
 .story-architecture aside p{font:12px/1.8 "DM Sans";color:#70695e}
 @media(max-width:700px){.story-library{grid-template-columns:1fr}.story-card[open]{grid-column:auto}.story-card summary{grid-template-columns:30px 1fr auto;padding:16px 14px}.story-title{font-size:19px}.story-open{font-size:9px}.story-architecture{grid-template-columns:1fr}.story-body{padding:20px 17px}.story-library-head{font-size:8px}}
+
+
+/* Accessibility, story discovery and mobile navigation polish */
+.skip-link{position:absolute;left:12px;top:-60px;background:#35473e;color:#fff;padding:12px 16px;z-index:30;border-radius:4px}
+.skip-link:focus{top:12px}
+:focus-visible{outline:3px solid #bd684f;outline-offset:3px}
+.story-tools{background:#eee7da;border:1px solid #dfd5c5;padding:20px 22px;border-radius:7px;margin:28px 0 20px}
+.story-search-label{display:block;font:9px "DM Mono";letter-spacing:1px;color:#94634f;margin-bottom:8px}
+.story-tools input{width:100%;max-width:520px;border:1px solid #cfc4b4;background:#fffaf1;border-radius:5px;padding:13px 14px;font:13px "DM Sans";color:#302e28}
+.story-tools input::placeholder{color:#9b9487}
+.story-filters{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}
+.story-filter{border:1px solid #c8beaf;background:transparent;color:#625d52;border-radius:20px;padding:8px 12px;font:10px "DM Mono";cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.story-filter:hover,.story-filter.active{background:#35473e;color:#fff8eb;border-color:#35473e}
+.story-results{font:10px "DM Mono";color:#857b6e;margin:13px 0 0}
+.story-card[hidden]{display:none}
+@media(max-width:600px){
+ .nav{gap:12px;padding:0 4vw}
+ .nav nav{display:flex;flex:1;min-width:0;gap:15px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;padding:8px 0}
+ .nav nav::-webkit-scrollbar{display:none}
+ .nav nav a{font-size:10px}
+ .hello{display:none}
+ .signature{font-size:22px;flex-shrink:0}
+ .story-tools{padding:16px}
+ .story-filter{font-size:9px;padding:7px 10px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
