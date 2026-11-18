@@ -265,3 +265,14 @@
 @media (min-width: 601px) {
   .menu-toggle, .mobile-contact { display: none !important; }
 }
+
+/* Scenario-specific architecture narrative */
+.story-thinking{margin:28px 0 34px;padding:clamp(22px,4vw,38px);background:#eee8dc;border:1px solid #d9cfbf;border-radius:8px;position:relative;overflow:hidden}
+.story-thinking:after{content:"✳";position:absolute;right:22px;top:12px;font-size:46px;color:#c38b72;opacity:.55}
+.story-thinking h3{font-family:"Fraunces",Georgia,serif;font-size:clamp(27px,4vw,40px);line-height:1.08;letter-spacing:-.7px;max-width:17ch;margin:9px 0 13px;color:#34372f}
+.story-thinking>p:not(.kicker){max-width:72ch;font-size:15px;line-height:1.75;color:#5d5a50}
+.thinking-modes{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;max-width:850px}
+.thinking-modes span{display:inline-flex;padding:8px 10px;border:1px solid #c9bba8;border-radius:999px;color:#62594e;font:9px "DM Mono",monospace;letter-spacing:.55px;background:#f7f2e9}
+.story-architecture aside b{display:block;font:10px "DM Mono",monospace;letter-spacing:1px;color:#9a614f;margin-bottom:9px}
+.story-architecture aside p{font-size:13px;line-height:1.7;color:#5c594f}
+@media(max-width:600px){.story-thinking{margin:20px 0 25px;padding:22px 18px}.story-thinking:after{right:14px;top:9px;font-size:34px}.story-thinking h3{max-width:13ch;font-size:32px}.story-thinking>p:not(.kicker){font-size:14px}.thinking-modes{gap:6px}.thinking-modes span{font-size:8px;padding:7px 8px}.story-architecture{gap:16px}.story-architecture aside{padding-top:12px;border-top:1px solid #ddd2c3}}
