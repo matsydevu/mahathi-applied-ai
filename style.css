@@ -109,3 +109,39 @@
  .story-filter{font-size:9px;padding:7px 10px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Art-directed responsive pass: deliberate mobile navigation and hero hierarchy */
+.menu-toggle,.mobile-contact{display:none}
+@media(max-width:600px){
+ .nav{height:66px;padding:0 6vw;gap:12px;position:sticky}
+ .signature{font-size:25px}
+ .menu-toggle{display:flex;align-items:center;gap:10px;border:1px solid #cfc5b5;border-radius:30px;background:#fffaf1;color:#35473e;padding:10px 13px;font:9px "DM Mono";letter-spacing:1px;cursor:pointer}
+ .menu-toggle b{font:18px "DM Sans";line-height:1}
+ .nav nav{display:none;position:absolute;left:0;right:0;top:65px;background:#f8f4ec;border-bottom:1px solid #d9d0c1;padding:12px 6vw 20px;box-shadow:0 16px 24px #3c35251a;flex-direction:column;gap:0;z-index:12}
+ .nav.menu-open nav{display:flex}
+ .nav nav a{font:13px "DM Sans";padding:13px 0;border-bottom:1px solid #e5ddcf;color:#454238}
+ .nav nav .mobile-contact{display:block;color:#a45c49;font-weight:600;border:0;padding-bottom:4px}
+ .hello{display:none}
+ .hero{padding:38px 7vw 25px;gap:0;min-height:0;grid-template-columns:1fr}
+ .hand-note{font-size:17px;margin-bottom:15px}
+ .hero .kicker{font-size:9px;line-height:1.7;letter-spacing:1px;margin:0}
+ .hero h1{font-size:clamp(42px,11vw,54px);line-height:1.02;letter-spacing:-1.9px;margin:16px 0 17px;max-width:13ch}
+ .intro{font-size:15px;line-height:1.65;margin:0;max-width:42ch}
+ .small-intro{font-size:12px;line-height:1.65;margin:10px 0 0}
+ .hero-links{gap:16px;flex-wrap:wrap;margin-top:21px}
+ .pill-button{padding:13px 17px;font-size:12px;gap:15px}
+ .quiet-link{font-size:11px}
+ .tiny-facts{margin-top:23px;gap:8px 14px;font-size:8px;line-height:1.6}
+ .hero-right{height:clamp(300px,88vw,370px);width:100%;max-width:420px;margin:8px auto 0;transform:none}
+ .sunburst{width:min(78vw,320px);height:min(78vw,320px)}
+ .portrait-frame{width:min(61vw,245px);height:min(77vw,310px);padding:8px 8px 34px;transform:rotate(2deg);box-shadow:9px 12px 0 #d9d1c1}
+ .floating-note{padding:10px 12px;font-size:9px}
+ .floating-note strong{font-size:13px}
+ .note-one{top:22px;right:0}
+ .note-two{bottom:24px;left:0}
+ .sparkle{font-size:21px}
+ .s1{top:55px;left:8px}
+ .s2{bottom:35px;right:12px}
+ .shelf-section{padding-top:48px}
+}
+@media(min-width:601px){.menu-toggle{display:none}.mobile-contact{display:none!important}}
