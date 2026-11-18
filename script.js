@@ -1,0 +1,1 @@
+document.querySelectorAll(".book").forEach(book=>book.addEventListener("click",()=>{document.querySelectorAll(".book").forEach(b=>b.classList.remove("selected"));book.classList.add("selected");const panel=document.querySelector(".book-detail");panel.innerHTML=`<span class="detail-label">FROM THE SHELF</span><h3>${book.dataset.title}</h3><p>${book.dataset.copy}</p>`;}));
